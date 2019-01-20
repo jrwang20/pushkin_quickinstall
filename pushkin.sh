@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# make sure /usr/local/bin exists
+if [ ! -d "/usr/local/bin" ]; then
+	mkdir /usr/local/bin
+fi
+
+[[ ":$PATH:" != *":/usr/local/bin:"* ]] && echo "$PATH:/usr/local/bin" >> ~/.bash_profile
+
 mv pushkin /usr/local/bin/
 mv README.md README_quickinstall.md
 
