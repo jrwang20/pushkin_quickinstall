@@ -1,3 +1,5 @@
+In process of being deprecated. Feel free to ignore.
+
 # pushkin_quickinstall
 installation tool for pushkin
 
